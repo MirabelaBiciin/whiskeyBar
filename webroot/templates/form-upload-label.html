@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.thymeleaf.org" layout:decorate="layout-logo">
+<head>
+    <title>Upload logo</title>
+</head>
+<body>
+<form action="/webroot/templates/form-upload" method="post" enctype="multipart/form-data">
+    <div class="from-group-row">
+        <div class="col-sm-2">
+        <select name="label">
+            <option value=1>Malt Whisky</option>
+            <option value=2>Grain Whisky</option>
+            <option value=3>Blended Whisky</option>
+            <option value=4>Bourbon Whisky</option>
+            <option value=5>Tennessee Whisky</option>
+            <option value=6>Corn Whiskey</option>
+            <option value=7>Rye Whiskey</option>
+        </select>
+        </div>
+        <div class="col-sm-4">
+            <label class="control-label">Upload file</label>
+            <input id="input-1" name="input-2" type="file" class="file">
+            <button type="submit" class="btn-btn default">Submit</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
